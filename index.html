@@ -23,11 +23,15 @@
         .box { background: #1e1e1e; padding: 30px; border-radius: 10px; display: inline-block; max-width: 600px; text-align: left; }
         ol { line-height: 1.8; }
         .tip { color: #ffcc00; font-weight: bold; }
+        .warning { color: #ff4d4d; font-weight: bold; }
     </style>
 </head>
 <body>
     <h1>D2 Survivors 金幣修改工具安裝</h1>
     <div class="box">
+        <p class="warning">⚠️ 更改遊戲會破壞遊戲樂趣，想清楚再改！</p>
+        <p class="tip">💡 貼心提醒：更改前需要身上有金幣，並且存檔過一次後才會生效喔！</p>
+        <br>
         <p><b>安裝方法超簡單：</b></p>
         <ol>
             <li>請確保你的瀏覽器有顯示「書籤列」（若沒有請按 <span class="tip">Ctrl + Shift + B</span> 開啟）。</li>
@@ -36,11 +40,11 @@
         <br>
         <div style="text-align: center;">
             <!-- 這是一個可以直接拖曳到書籤列的書籤連結 -->
-            <a class="bookmark-btn" href="javascript:(function(){let rawData=localStorage.getItem('d2-survivors/save/v1');if(!rawData){let saveKey=Object.keys(localStorage).find(k=>localStorage.getItem(k).includes('gold'));if(saveKey){rawData=localStorage.getItem(saveKey);let data=JSON.parse(rawData);data.gold=999999;localStorage.setItem(saveKey,JSON.stringify(data));alert('✨ 金幣修改成功！請按 F5 重新整理！');return;}alert('❌ 找不到遊戲存檔，請確認你正在 https://d2survivors.lol 遊戲頁面中！');return;}let data=JSON.parse(rawData);data.gold=9999999;localStorage.setItem('d2-survivors/save/v1',JSON.stringify(data));localStorage.removeItem('d2-survivors/save/v1/unreadable');alert('✨ 成功！金幣已改為 9,999,999，請按 F5 重新整理！');})();">🔥 D2 Survivors 改金幣</a>
+            <a class="bookmark-btn" href="javascript:(function(){let rawData=localStorage.getItem('d2-survivors/save/v1');if(!rawData){let saveKey=Object.keys(localStorage).find(k=>localStorage.getItem(k).includes('gold'));if(saveKey){rawData=localStorage.getItem(saveKey);let data=JSON.parse(rawData);data.gold=999999;localStorage.setItem(saveKey,JSON.stringify(data));alert('✨ 金幣修改成功！請按 F5 重新整理！');return;}alert('❌ 找不到遊戲存檔，請確認你正在 https://d2survivors.lol 遊戲頁面中！');return;}let data=JSON.parse(rawData);data.gold=999999;localStorage.setItem('d2-survivors/save/v1',JSON.stringify(data));localStorage.removeItem('d2-survivors/save/v1/unreadable');alert('✨ 成功！金幣已改為 999,999，請按 F5 重新整理！');})();">🔥 D2 Survivors 改金幣</a>
         </div>
         <br><br>
         <p><b>使用方法：</b></p>
-        <p>打開遊戲網頁 <a href="https://d2survivors.lol/play/" target="_blank" style="color: #ffcc00;">D2 Survivors 遊戲</a>，進入遊戲後點一下剛才拖過去的書籤，金幣就會變成 9,999,999，再按 F5 重新整理就大功告成了！</p>
+        <p>打開遊戲網頁 <a href="https://d2survivors.lol/play/" target="_blank" style="color: #ffcc00;">D2 Survivors 遊戲</a>，進入遊戲後點一下剛才拖過去的書籤，金幣就會變成 999,999，再按 F5 重新整理就大功告成了！</p>
     </div>
 </body>
 </html>
